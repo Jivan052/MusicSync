@@ -3,7 +3,7 @@ import YouTube from 'react-youtube';
 import { io } from 'socket.io-client';
 import './App.css';
 
-const socket = io(window.location.hostname === 'localhost' ? 'http://localhost:3000' : window.location.origin);
+const socket = io("https://musicsync-2az2.onrender.com");
 
 function App() {
   const [videoUrl, setVideoUrl] = useState('');
